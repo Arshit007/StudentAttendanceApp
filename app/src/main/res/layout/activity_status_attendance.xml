@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/toolbar" android:id="@+id/userToolbar"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_below="@id/userToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_all_courses1"
+
+        android:layout_width="match_parent"
+        android:layout_below="@id/scroll_view"
+        android:layout_height="wrap_content">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:background="#2ecc71"
+
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/fbutton_color_green_sea"
+        android:layout_alignParentBottom="true" >
+
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/total_txt"
+            android:textAlignment="center"
+            android:textStyle="italic|bold"
+            android:layout_centerHorizontal="true"
+            android:text="Total Lecture  : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/total_value"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="10"
+            android:textStyle="italic|bold"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/total_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/present_txt"
+            android:text="Present - "
+            android:textStyle="italic|bold"
+            android:layout_below="@id/total_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:padding="10dp"
+            android:textStyle="italic|bold"
+            android:id="@+id/present_value"
+            android:text="7"
+            android:textColor="@color/white"
+            android:layout_below="@id/total_txt"
+            android:layout_toRightOf="@id/present_txt"
+            android:layout_width="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/ptn_txt"
+            android:padding="10dp"
+            android:text="Percentage = "
+            android:textStyle="italic|bold"
+            android:layout_below="@id/present_txt"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/percentage_value"
+            android:text="75.5%"
+            android:padding="10dp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/white"
+            android:layout_below="@id/present_txt"
+            android:layout_toRightOf="@id/ptn_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_below="@id/ptn_txt"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+

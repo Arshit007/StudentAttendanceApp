@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="60dp"
+    android:clipToPadding="false">
+
+
+    <TextView
+        android:id="@+id/group_name_display"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_msg"
+        android:layout_below="@+id/group_name_display"
+        android:layout_alignLeft="@+id/group_name_display"
+        android:background="@drawable/rounded_rectangle_orange"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="16dp"
+        android:elevation="2dp"
+        android:textSize="18dp"
+        android:text="How are you doing? This is a long message that should probably wrap."
+        />
+
+  <TextView
+      android:id="@+id/time_display"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/chat_msg"
+
+      android:layout_alignParentEnd="true"
+android:textColor="@color/colorPrimaryDark"
+    />
+
+
+    <ImageView
+android:src="@drawable/rounded_rectangle_orange"
+        android:id="@+id/message_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignStart="@+id/chat_msg"
+        android:layout_below="@+id/chat_msg"
+        android:layout_marginLeft="0dp"
+        android:layout_toEndOf="@+id/chat_msg"
+        android:padding="0dp"
+        android:scaleType="centerCrop" />
+
+</RelativeLayout>
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="300dp"-->
+    <!--android:id="@+id/relative_outer"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="20dp"-->
+    <!--android:paddingTop="20dp"-->
+    <!--android:paddingRight="20dp"-->
+    <!--android:paddingBottom="20dp"-->
+    <!--android:padding="8dp"-->
+    <!--&gt;-->
+
+
+    <!--<TextView-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/group_name_display"-->
+    <!--/>-->
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:src="@drawable/profile_avatar_small"-->
+    <!--android:id="@+id/user_diaplay_img"-->
+
+    <!--/>-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/chat_msg"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_toRightOf="@id/user_diaplay_img"-->
+    <!--android:text="hello"-->
+    <!--android:textSize="20dp"-->
+    <!--android:padding="10dp"-->
+    <!--android:paddingLeft="20dp"-->
+    <!--android:paddingTop="20dp"-->
+    <!--android:paddingRight="20dp"-->
+    <!--android:paddingBottom="20dp"-->
+    <!--/>-->
+
+
+    <!--</RelativeLayout>-->

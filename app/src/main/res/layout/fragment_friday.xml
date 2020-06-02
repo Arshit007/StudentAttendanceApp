@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/yellow"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_fri"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/txt_fri"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+
+            android:text="OOPS NO CLASSES AVAILABLE "
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:textStyle="italic|bold"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:background="@color/pink"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

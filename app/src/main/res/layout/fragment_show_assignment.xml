@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CourseRegister">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="3dp"
+        android:padding="10dp"
+        app:cardUseCompatPadding="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:textSize="15dp"
+                android:id="@+id/txtSemesterAssign"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+                android:text="Select Semester To be register courses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Spinner
+                android:id="@+id/SemesterspinnerAssign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSemesterAssign"
+                android:hint="Ex(BBA,BTech,MBA,MCA) "
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+                />
+
+
+
+
+            <TextView
+                android:textSize="15dp"
+                android:id="@+id/txt_asign"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                android:layout_below="@id/SemesterspinnerAssign"
+                android:text="Select Course To see Assignment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Spinner
+                android:id="@+id/CourseAsignspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_asign"
+                android:hint="Ex(BBA,BTech,MBA,MCA) "
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+                />
+
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/CourseAsignspinner"
+                android:id="@+id/see_assignment_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CourseRegister">
+
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="3dp"
+        android:padding="10dp"
+        app:cardUseCompatPadding="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:textSize="15dp"
+                android:id="@+id/txtSemester"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                android:text="Select Semester To be register courses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Spinner
+                android:id="@+id/Semesterspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSemester"
+                android:hint="Ex(BBA,BTech,MBA,MCA) "
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:textStyle="italic|bold"
+                android:padding="10dp"
+                android:inputType="text"
+
+                />
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:background="#1abc9c"
+                android:id="@+id/btn_add_courses"
+                android:layout_alignParentBottom="true"
+                />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/Semesterspinner"
+                android:id="@+id/add_register_courses_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:id="@+id/displayLinearLayout"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+
+            android:padding="10dp"
+
+            android:id="@+id/edit_text_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Category"
+            android:layout_marginTop="0dp"
+            android:textSize="25dp"
+            android:textStyle="italic|bold" />
+
+
+        <Button
+
+            android:id="@+id/btnSelect"
+            android:layout_marginTop="70dp"
+            android:text="SELECT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_below="@id/btnSelect"
+            android:id="@+id/btnUpload"
+            android:text="UPLOAD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+
+</LinearLayout>

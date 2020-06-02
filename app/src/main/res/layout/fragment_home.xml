@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+    android:background="#795548"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+
+        android:background="@color/pink"
+        android:layout_width="match_parent"
+
+        android:text="Courses Register"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Choose Semester"
+        android:textAlignment="center"
+
+        android:background="@color/black"
+        android:textColor="@color/white_greyish"
+        android:textSize="20dp"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/course_sem_spinner"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+    </Spinner>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_show_course_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/addRegisterCourse"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="@dimen/fab_margin"
+    app:backgroundTint="@color/colorPrimary"
+    app:srcCompat="@drawable/ic_add_circle_black_24dp" />
+
+</android.support.design.widget.CoordinatorLayout>
+

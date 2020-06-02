@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#795548"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Choose Semester"
+            android:textAlignment="center"
+
+            android:background="@color/pink"
+            android:textColor="@color/white_greyish"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/attendance_sem_spinner"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Choose Course Name"
+            android:textAlignment="center"
+            android:background="@color/blue"
+            android:textColor="@color/white_greyish"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/course_select_spinner"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_show_attendance_detail"
+            android:layout_width="match_parent"
+            android:scrollbars="horizontal"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="#2ecc71"
+
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/fbutton_color_green_sea"
+        android:layout_alignParentBottom="true" >
+
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/total_txt1"
+            android:textAlignment="center"
+            android:textStyle="italic|bold"
+            android:layout_centerHorizontal="true"
+            android:text="Total Lecture  : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/total_value1"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text=""
+            android:textStyle="italic|bold"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/total_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/present_txt1"
+            android:text="Present - "
+            android:textStyle="italic|bold"
+            android:layout_below="@id/total_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:padding="10dp"
+            android:textStyle="italic|bold"
+            android:id="@+id/present_value1"
+            android:text=""
+            android:textColor="@color/white"
+            android:layout_below="@id/total_txt1"
+            android:layout_toRightOf="@id/present_txt1"
+            android:layout_width="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/ptn_txt1"
+            android:padding="10dp"
+            android:text="Percentage = "
+            android:textStyle="italic|bold"
+            android:layout_below="@id/present_txt1"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/percentage_value1"
+            android:text=""
+            android:padding="10dp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/white"
+            android:layout_below="@id/present_txt1"
+            android:layout_toRightOf="@id/ptn_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
